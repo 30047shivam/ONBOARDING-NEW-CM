@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Routes, Route, useNavigate, Navigate, useLocation } from "react-router-dom";
 import supabase from "./supabase";
 
-import Login from "./Login";
+import Login from "./login";
 import Register from "./Register";
 import ProgramIntro from "./ProgramIntro";
 import UserDashboard from "./UserDashboard";
