@@ -12,6 +12,8 @@ export default function CampusMantriOnboarding({ next }) {
     gfg: "",
     linkedin: "",
     instagram: "",
+    city: "",
+    state: "",
   });
 
   const [errors, setErrors] = useState({});
@@ -34,6 +36,8 @@ export default function CampusMantriOnboarding({ next }) {
     if (!formData.gfg) newErrors.gfg = "GFG username is required";
     if (!formData.linkedin) newErrors.linkedin = "LinkedIn URL is required";
     if (!formData.instagram) newErrors.instagram = "Instagram URL is required";
+    if (!formData.city) newErrors.city = "City is required";
+    if (!formData.state) newErrors.state = "State is required";
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
@@ -68,6 +72,8 @@ export default function CampusMantriOnboarding({ next }) {
         gfg_username: formData.gfg,
         linkedin_url: formData.linkedin,
         instagram_url: formData.instagram,
+        city: formData.city,
+        state: formData.state,
         daily_posts_count: 0,
         role: "user",
         program_read: false, // important for ProgramIntro
@@ -121,6 +127,8 @@ export default function CampusMantriOnboarding({ next }) {
             ["branch", "Branch", "e.g., CSE, ECE"],
             ["phone", "Phone Number", "10-digit phone number"],
             ["gfg", "GFG Username", "Your GFG profile username"],
+            ["city", "City", "Enter your city"],
+            ["state", "State", "Enter your state"],
             ["linkedin", "LinkedIn URL", "Your LinkedIn profile URL"],
             ["instagram", "Instagram URL", "Your Instagram profile URL"],
           ].map(([name, label, placeholder]) => (
