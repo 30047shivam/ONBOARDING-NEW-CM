@@ -112,7 +112,7 @@ export default function ProgramIntro({ user, userUuid, onUnlock, next }) {
           <div className="w-full flex flex-col items-center justify-center py-10">
             <p className="text-gray-300 mb-4 text-center text-lg">If you want to know more, download this file:</p>
             <a
-              href="https://drive.google.com/uc?export=download&id=12sQoI8fwY2wSu-6Zhqft7k_U-90HznWO"
+              href="https://drive.google.com/file/d/12sQoI8fwY2wSu-6Zhqft7k_U-90HznWO/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-green-500 hover:bg-green-600 text-black px-6 py-3 rounded-lg font-bold text-lg shadow"
